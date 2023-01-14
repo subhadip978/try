@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@1,700&display=swap" rel="stylesheet">
+
+	<style>
+		body{
+			background: url(/image/book.jpg);
+			 font-family: 'Noto Serif', serif; 
+			margin: 0px;
+			padding: 0 px;
+			
+		}
+		.left{
+			position: absolute;
+			display: inline-block;
+			/* Inline block is placed as inline element on same line but we can add margin , padding all four side . */
+			border: 2px solid blue;
+			top: 10px;
+			left: 10px;
+
+		}
+		
+		.mid{
+			display:block;
+			/* block is start with a new line and fill up the horizontal spaces and we can add margin, padding all four sight */
+			width: 40%;
+			margin:10px auto;
+         /* border: 2px solid blue; */
+		}
+		.right{
+			position: absolute;
+			right: 10px;
+			top: 10px;
+			display: inline-block;
+             /* border: 2px solid blue; */
+		}
+		 .navbar{ 
+			display:inline-block;
+		 }
+
+
+		
+
+		.navbar li{
+			display: inline-block;
+		}
+		
+		.navbar li a{
+			color: black;
+			text-decoration: none;
+			padding: 0px 10px;
+		}
+		.navbar li a:hover{
+			text-decoration: underline;
+			color: aqua;
+
+		}
+		.btn{
+			font-family: 'Noto Serif', serif;
+			padding: 3px 20px;
+			border: 2 px solid blue;
+			border-radius: 6px;
+			font-size: 11px;
+
+
+		}
+
+		.btn:hover{
+			background-color: rgb(110, 99, 120);
+		}
+
+		.Container{
+			/* border: 2px solid red; */
+			border-radius: 10px;
+			width: 40%;
+			margin: 19px 32px;
+			padding: 40px 2px;
+		}
+		.formgroup input{
+			border: 2px solid palevioletred;
+			border-radius: 10px;
+			font-size: 15px;
+			 text-align: center; 
+			display: block;
+			margin: 2px auto;
+			width: 400px;
+
+		}
+		.Container h1{
+			text-align: center;
+
+		}
+		.Container button{
+			display: block;
+			margin:20px auto;
+		}
+		
+
+	</style>
+</head>
+<body>
+	<header class="header">
+		<div class="left">
+
+		<!-- left box for logo -->
+		I am left
+	</div>
+	
+	<!-- mid box for naVbar -->
+	<div class="mid">
+		
+		<ul class="navbar">
+			<li><a href="#" class="hover">Home</a></li>
+			<li><a href="#">About Us</a></li>
+			<li><a href="#">Contact Us</a></li>
+			
+		</ul>
+	</div>
+
+		<div class="right">
+			<button class="btn">Call Us Now</button>
+			<button class="btn">Email Us</button>
+			
+
+		</div>
+	</header>
+	<div class="Container">
+		<h1>Join the best learning evolution</h1>
+		<form action="noaction.php">
+			<div class="formgroup">
+				<input type="text" name="" placeholder="Enter Your Name">
+			</div>
+			<div class="formgroup">
+				<input type="text" name="" placeholder="Enter Your Age">
+			</div>
+			<div class="formgroup">
+				<input type="text" name="" placeholder="Enter Your Gender">
+			</div>
+			<div class="formgroup">
+				<input type="text" name="" placeholder="Enter Your Phone No ">
+			</div>
+			<div class="formgroup">
+				<input type="text" name="" placeholder="Enter Your Name Email">
+			</div>
+			<button class="btn">Submit Now</button>
+		</form>
+	</div>
+</body>
+</html>
